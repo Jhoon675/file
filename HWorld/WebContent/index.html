@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hello HTML</title>
+</head>
+<body>
+	<h1>Hello,HTML</h1>
+	<p>이 페이지는 정적인 HTML입니다.</p>
+	<p>작성자: 강종훈</p>
+	<a href="./detail.html">팬더</a>
+	<a href="./Table.html">테이블 연습</a>
+	<img src="./images/panda.jpg" title="팬더" alt="Pandas" width="800"
+		height="528" />
+	<a href="./images/panda.jpg">???</a>
+	<br/>
+	<a href="user_form.html">입력 폼 연습</a>
+	<br />
+	<a href="Hello.jsp?name=친구">GET 요청 파라미터 전달</a>
+	<br />
+	<h3>HelloServlet 호출</h3>
+	<a href="/HWorld/hs?name=Servlet">GET 요청 Servlet 호출</a>
+	<br />
+	<h3>HelloServlet POST 호출</h3>
+	<!-- action: 해당 폼을 처리할 수 있는 서블릿의 url
+		method: 데이터 전송을 위한 전송 방식(GET or POST) -->
+		
+		<!-- label: 이름을 눌러도 입력칸이 인식되기 위해(편의성) -->
+		<!-- id: 해당 Elemant가 Html에서 식별되기 위한 유일값 -->
+		<!-- (중요) name: 서버에 파라미터로 전송될 데이터 이름 -->
+	<form action="/HWorld/hs" 
+		method="POST">
+		<label for="last_name">성</label>
+		<input type="text" 
+			name="last_name"
+			id="last_name" 
+			placeholder="성을 입력하세요" /><br />
+		<label for="first_name">이름</label>
+		<input type="text"
+			name="first_name"
+			id="first_name"
+			placeholder="이름을 입력하세요" /><br />
+			
+		<!-- 전송 버튼 -->
+		<input type="submit"
+			value="전송" />
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
